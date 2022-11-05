@@ -190,7 +190,7 @@ class _MenuWidgetState extends State<_MenuWidget> {
 
           menuItemWidget = TextButton(
             onPressed: item.onTap,
-            fr: TextButton.styleFrom(
+            style: TextButton.styleFrom(
               padding: EdgeInsets.zero,
               textStyle: widget.textStyle,
               shape: const RoundedRectangleBorder(
@@ -362,6 +362,13 @@ class _MenuWidgetState extends State<_MenuWidget> {
         ),
         if (_menu._hasChildren && !_menu._isBack)
           Icon(Icons.arrow_right, color: widget.moreIconColor),
+        if (_menu.trailingText != '')
+          Text(
+            _menu.trailingText,
+            style: widget.textStyle,
+            maxLines: 1,
+            overflow: TextOverflow.visible,
+          )
       ],
     );
   }
