@@ -16,6 +16,8 @@ class PlutoMenuItem {
   /// Menu title
   final String title;
 
+  final String trailingText;
+
   final IconData? icon;
 
   final bool enable;
@@ -28,6 +30,7 @@ class PlutoMenuItem {
 
   PlutoMenuItem({
     required this.title,
+    this.trailingText = '',
     this.icon,
     this.enable = true,
     this.onTap,
@@ -96,6 +99,7 @@ class PlutoMenuItem {
 
   PlutoMenuItem._back({
     required this.title,
+    this.trailingText = '',
     this.children,
   })  : icon = null,
         enable = true,
