@@ -162,7 +162,7 @@ class _MenuWidgetState extends State<_MenuWidget> {
         Widget buildItemWidget(item) {
           EdgeInsets padding = EdgeInsets.symmetric(
             horizontal: 15,
-            vertical: 5,
+            vertical: 0,
           );
 
           late Widget menuItemWidget;
