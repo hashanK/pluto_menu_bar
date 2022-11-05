@@ -190,7 +190,8 @@ class _MenuWidgetState extends State<_MenuWidget> {
 
           menuItemWidget = TextButton(
             onPressed: item.onTap,
-            style: TextButton.styleFrom(
+            fr: TextButton.styleFrom(
+              padding: EdgeInsets.zero,
               textStyle: widget.textStyle,
               shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.zero,
